@@ -14,6 +14,9 @@
 		9F8E3F2B24386F4C007B89CF /* ERP_Codebase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F8E3F2924386F4C007B89CF /* ERP_Codebase.xcdatamodeld */; };
 		9F8E3F2D24386F4D007B89CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F8E3F2C24386F4D007B89CF /* Assets.xcassets */; };
 		9F8E3F3024386F4D007B89CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F8E3F2E24386F4D007B89CF /* LaunchScreen.storyboard */; };
+		9F8E3F3A24387AB3007B89CF /* GeneralListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8E3F3924387AB3007B89CF /* GeneralListView.swift */; };
+		9F8E3F3D2438DF42007B89CF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8E3F3C2438DF42007B89CF /* NetworkManager.swift */; };
+		9F8E3F3F2438EC39007B89CF /* LoginUserInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8E3F3E2438EC39007B89CF /* LoginUserInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,10 @@
 		9F8E3F2C24386F4D007B89CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F8E3F2F24386F4D007B89CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F8E3F3124386F4D007B89CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F8E3F3924387AB3007B89CF /* GeneralListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralListView.swift; sourceTree = "<group>"; };
+		9F8E3F3B2438C522007B89CF /* ERP Codebase.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ERP Codebase.entitlements"; sourceTree = "<group>"; };
+		9F8E3F3C2438DF42007B89CF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9F8E3F3E2438EC39007B89CF /* LoginUserInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserInterface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +65,13 @@
 		9F8E3F1F24386F4C007B89CF /* ERP Codebase */ = {
 			isa = PBXGroup;
 			children = (
+				9F8E3F3B2438C522007B89CF /* ERP Codebase.entitlements */,
 				9F8E3F2024386F4C007B89CF /* AppDelegate.swift */,
 				9F8E3F2224386F4C007B89CF /* SceneDelegate.swift */,
 				9F8E3F2424386F4C007B89CF /* ViewController.swift */,
+				9F8E3F3924387AB3007B89CF /* GeneralListView.swift */,
+				9F8E3F3E2438EC39007B89CF /* LoginUserInterface.swift */,
+				9F8E3F3C2438DF42007B89CF /* NetworkManager.swift */,
 				9F8E3F2624386F4C007B89CF /* Main.storyboard */,
 				9F8E3F2C24386F4D007B89CF /* Assets.xcassets */,
 				9F8E3F2E24386F4D007B89CF /* LaunchScreen.storyboard */,
@@ -141,7 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F8E3F3F2438EC39007B89CF /* LoginUserInterface.swift in Sources */,
+				9F8E3F3D2438DF42007B89CF /* NetworkManager.swift in Sources */,
 				9F8E3F2524386F4C007B89CF /* ViewController.swift in Sources */,
+				9F8E3F3A24387AB3007B89CF /* GeneralListView.swift in Sources */,
 				9F8E3F2B24386F4C007B89CF /* ERP_Codebase.xcdatamodeld in Sources */,
 				9F8E3F2124386F4C007B89CF /* AppDelegate.swift in Sources */,
 				9F8E3F2324386F4C007B89CF /* SceneDelegate.swift in Sources */,
@@ -288,7 +302,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "ERP Codebase/ERP Codebase.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KDV6H29ZP5;
 				INFOPLIST_FILE = "ERP Codebase/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -296,6 +312,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "CB.ERP-Codebase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,7 +322,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "ERP Codebase/ERP Codebase.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KDV6H29ZP5;
 				INFOPLIST_FILE = "ERP Codebase/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -313,6 +332,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "CB.ERP-Codebase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
